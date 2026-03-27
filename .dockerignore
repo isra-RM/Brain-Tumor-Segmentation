@@ -1,0 +1,19 @@
+# Data directories
+.vscode/
+.venv/ 
+logs/
+assets/
+BraTS2021/
+results/
+
+# Large or unnecessary files
+*.nii
+*.nii.gz
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Git
+.gitignore
