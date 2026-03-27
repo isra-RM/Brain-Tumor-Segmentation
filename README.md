@@ -1,6 +1,21 @@
 # Introduction
 
-This project presents a brain glioma segmentation model built with [MONAI](https://monai.io/) using structural MRI data from the [Brain Tumor Segmentation Challenge 2021](http://braintumorsegmentation.org/). The challenge benchmarks state-of-the-art methods for segmenting glioma subregions from multimodal MRI scans. The implementation is intended as a demonstration of MONAI’s capabilities for medical image analysis and research workflows, and it is not designed for clinical use.
+This repository presents an end-to-end deep learning pipeline for brain tumor segmentation developed using the [MONAI](https://monai.io/) framework and multimodal structural MRI data from the [Brain Tumor Segmentation Challenge 2021](http://braintumorsegmentation.org/). The BraTS challenges provide a standardized benchmark for evaluating automated methods that segment glioma subregions from multimodal MRI acquisitions, enabling comparison of modern medical imaging segmentation techniques.
+
+Rather than focusing on maximizing segmentation performance, this project emphasizes the complete lifecycle of a medical AI solution, including:
+
+- Dataset organization and preprocessing
+- Model training and validation
+- Quantitative evaluation
+- Model inference
+- Model deployment through containerization.
+
+The implementation demonstrates how MONAI can be used to build research-grade medical imaging pipelines that remain modular and reproducible, even under limited computational resources. Particular attention is given to practical engineering considerations such as standardized preprocessing, transfer learning, experiment management, and portable inference using Docker.
+
+⚠️ Disclaimer:
+This project is provided for research and educational purposes only and is not intended for clinical diagnosis or medical decision-making.
+
+
 
 <div style="text-align: center;">
   <img src="assets/intro.png" width="500"/>
